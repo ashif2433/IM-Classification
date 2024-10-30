@@ -1,0 +1,135 @@
+/* General App Styling */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Light and Dark Mode */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #eaeaea;
+}
+
+/* File Input and Button */
+.file-input-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.file-input-container input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007acc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-file-upload:hover {
+  background-color: #005f99;
+}
+
+/* Hide default file input */
+.file-input-container input[type="file"] {
+  display: none;
+}
+
+/* Image Preview */
+.image-preview {
+  margin-top: 20px;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Clear button*/
+.clear-button {
+  background-color: #ff5c5c;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clear-button:hover {
+  background-color: #e53e3e;
+}
+
+/* Prediction Container and Items */
+.predictions-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.prediction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* Light and Dark Mode Styles for Predictions */
+.light-mode .prediction-item {
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #000000;
+}
+
+.dark-mode .prediction-item {
+  background-color: #333333;
+  border: 1px solid #444444;
+  color: #eaeaea;
+}
+
+/* Toggle Button */
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #4e4e4c;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.toggle-button:hover {
+  background-color: #90EE90;
+  transform: scale(1.05);
+}
+
+/* Container Styling */
+.app-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
